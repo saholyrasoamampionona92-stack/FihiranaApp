@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fihirana App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien pour déclarer l'application sur le téléphone-->
+     <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header>
+        <h1>Fihirana Masina</h1>
+        <input type="text" id="barreRecherche" onkeyup="rechercherChant()" placeholder="hitady hira...">
+
+        <!-- Boutons pour agrandir/diminuer le texte-->
+         <div class="reglage-texte">
+            <span>Hadin'ny soratra :</span>
+            <button onclick="changerTailleTexte(2)">A+ +</button>
+            <button onclick="changerTailleTexte(-2)">A- -</button>
+         </div>
+    </header>
+    <main class="lisitra-hira" id="conteneurHira">
+        <!-- Le JavaScript va insérer tous les chants ici automatiquement -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
